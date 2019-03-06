@@ -33,6 +33,9 @@ article{
   background-color: white;
   box-shadow: 10px 10px 48px -17px rgba(0,0,0,0.75);
   border-radius: 20px;
+  opacity: 0;
+  animation: fade-in .3s ease 1 forwards;
+  max-width: 30%
 }
 
 article:hover>.summary{
@@ -65,4 +68,69 @@ img{
   display: block;
   width: 100%;
   border-radius: 0 0 20px 20px;
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.loading{
+  background-color: white;
+  position: relative;
+  padding-top: 1em;
+}
+
+.loading__title {
+  content: "";
+  width: 100%;
+  background-color: grey;
+  position: relative;
+  overflow: hidden;
+  min-height: 2rem;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+
+.loading__date {
+  content: "";
+  width: 25%;
+  background-color: grey;
+  position: relative;
+  overflow: hidden;
+  min-height: 1rem;
+}
+
+.loading__img {
+  content: "";
+  width: 100%;
+  background-color: grey;
+  position: relative;
+  overflow: hidden;
+  min-height: 8rem;
+}
+
+.loading::before {
+  content: "";
+  width: .5rem;
+  position: absolute;
+  top: 0;
+  left: -.5rem;
+  animation: load 1s linear infinite;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+  border-radius: 20px 20px 20px 20px;
+}
+@keyframes load {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(30vw)
+  }
 }
