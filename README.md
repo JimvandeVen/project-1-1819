@@ -7,7 +7,7 @@ The many different activities that are done by, and inside, the OBA are shown in
 ## Demo
 [DEMO](https://sharp-lumiere-868017.netlify.com/)
 
-![Screenshot](src/screenshot.png)
+![Screenshot](screenshot.png)
 
 ## API
 The API I used for this project is the OBA API. One of my classmates ([maanlamp](https://github.com/maanlamp/OBA-wrapper)) wrote a wrapper for this API so it doesn't get overflown with to many requests. The data returned was a pain in the ass most of the times. But I maaged to get done what I wanted to get done
