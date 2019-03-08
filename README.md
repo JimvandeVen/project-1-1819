@@ -1,16 +1,17 @@
 # Project 1 @cmda-minor-web · 2018-2019
 
-## Globale Idee
+## Concept
 
-Workshops en cursussen aanpakken. Visueler maken evenals interactiever. Kijken of ik kan inhaken op de rol die de iba heeft binnen Amsterdam.
+The many different activities that are done by, and inside, the OBA are shown in a rather boring list of items. Exactly the same as the books you can loan. My idea is to make the look of the activities diffrentiate from the books and make the browsing through them more intuative. This project was only one week, it was also know as the pressure cooker.
 
+## Demo
+[DEMO](https://sharp-lumiere-868017.netlify.com/)
 
+![Screenshot](src/screenshot.png)
 
+## API
+The API I used for this project is the OBA API. One of my classmates ([maanlamp](https://github.com/maanlamp/OBA-wrapper)) wrote a wrapper for this API so it doesn't get overflown with to many requests. The data returned was a pain in the ass most of the times. But I maaged to get done what I wanted to get done
 
-## Zoek in de de collectie van de OBA
+## Prototype
 
-Het project vindt plaats bij de Centrale OBA. Maandagochtend is om 10.00 uur de kickoff, vrijdag zijn de presentaties van de resultaten. In een week bouwt iedere student een eigen prototype dat bezoekers kan helpen om items uit de OBA collectie te vinden. Technieken geleerd bij [CSS to the Rescue](https://github.com/cmda-minor-web/css-to-the-rescue-1819) en [Web App from Scratch](https://github.com/cmda-minor-web/web-app-from-scratch-1819) worden toegepast bij het bouwen van de de prototypes.
-
-We verzamelen maandagochtend om 09.45 op de 1e verdieping van de Centrale OBA, [Oosterdokskade 143](https://www.google.com/maps/place/OBA+library+of+Amsterdam/@52.3756983,4.9082087,15z/data=!4m2!3m1!1s0x0:0x6b97f693e6ecb494?ved=2ahUKEwioo6OrzubgAhWLNOwKHR6KDQgQ_BIwCnoECAYQCA).
-
-
+For this prototype I used plain javascript to make a frontend application. I made a dynamic filter function that gets the subjects from the data. For now the prototype only gets the activities from this and next month.
